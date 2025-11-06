@@ -3,63 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lvbel C5 Şarkıları - Gardaşın Sitesi</title>
+    <title>Lvbel C5 Şarkıları - Açılabilir Liste</title>
     <style>
-        /* CSS Başlangıcı: Sitenin daha iyi görünmesi için basit stil */
         body {
             font-family: Arial, sans-serif;
-            background-color: #121212; /* Koyu arka plan */
-            color: #ffffff; /* Beyaz yazı */
-            margin: 0;
-            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 20px;
+            text-align: center;
         }
         h1 {
-            color: #1DB954; /* Spotify Yeşili gibi bir renk */
-            text-align: center;
-            margin-bottom: 40px;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            display: inline-block;
         }
-        .muzik-kutu {
-            background-color: #1E1E1E;
-            padding: 15px;
-            margin-bottom: 25px;
+        .song-list {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .sarki-adi {
-            font-size: 1.2em;
+        .song-list li {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+            transition: background-color 0.3s;
+        }
+        .song-list li:last-child {
+            border-bottom: none;
+        }
+        .song-list li:hover {
+            background-color: #e9ecef;
+        }
+        a {
+            text-decoration: none;
+            color: #28a745; /* Yeşil renk */
             font-weight: bold;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
+            display: block;
         }
-        /* YouTube Embed (iframe) stilini düzenleme */
-        iframe {
-            width: 100%;
-            height: 315px; /* Standart YouTube player yüksekliği */
-            border: none;
-            border-radius: 6px;
+        a:hover {
+            text-decoration: underline;
+            color: #1e7e34;
         }
     </style>
 </head>
 <body>
 
-    <h1>🎤 Lvbel C5 - Popüler Şarkılar Listesi</h1>
+    <h1>🎵 Lvbel C5 Popüler Şarkıları</h1>
 
-    <div class="muzik-kutu">
-        <div class="sarki-adi">1. HAVHAVHAV</div>
-        <iframe src="https://www.youtube.com/embed/1tppzgR5ok0" 
-                title="LVBEL C5 - HAVHAVHAV" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>
-    </div>
+    <p>Şarkı adına tıklayarak YouTube'da arama yapabilirsiniz:</p>
 
-    <div class="muzik-kutu">
-        <div class="sarki-adi">2. TAK TAK TAK (feat. AKDO)</div>
-        <iframe src="https://www.youtube.com/embed/1v0s-1E_cO8" 
-                title="LVBEL C5, AKDO - TAK TAK TAK" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>
-    </div>
-    
-    </body>
-</html>
+    <ul class="song-list">
+        <li><a href="https://www.youtube.com/results?search_query=Lvbel+C5+HAVHAVHAV" target="_blank">HAVHAVHAV</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Lvbel+C5+Sezen+Aksu" target="_blank">Sezen Aksu</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Lvbel+C5+DACIA" target="_blank">DACIA</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Lvbel+C5+BABA" target="_blank">BABA</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Lvbel+C5+10+NUMARA" target="_blank">10 NUMARA</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Lvbel+C5+GELMEZSEN+GELME" target="_blank">GELMEZSEN GELME</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Lvbel+C5+NKBİ+X+YAPAMAM" target="_blank">NKBİ X YAPAMAM - Remix</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Lvbel+C5+GAZ+PEDAL" target="_blank">GAZ PEDAL</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Lvbel+C5+TAK+TAK+TAK" target="_blank">TAK TAK TAK (ft. AKDO)</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Lvbel+C5+COOOK+PARDON" target="_blank">COOOK PARDON (ft. AKDO)</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Lvbel+C5+MERMER" target="_blank">MERMER (ft. AKDO)</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Lvbel+C5+DOĞUŞTAN+BERİ+HAKLIYIM" target="_blank">DOĞUŞTAN BERİ HAKLIYIM (tmm)</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Lvbel+C5+behzat+ç" target="_blank">behzat ç</a></li>
